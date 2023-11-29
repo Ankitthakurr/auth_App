@@ -3,7 +3,7 @@ import axios from "axios";
 let Register = async (formdata) => {
   // let responce = await axios.post("api/user/register", formdata);
   // return responce.data;
-  let responce = await axios.post("api/user", formdata);
+  let responce = await axios.post("http://localhost:7000/api/user", formdata);
   return responce.data;
 };
 let Login = async (formdata) => {
